@@ -5,8 +5,7 @@ import 'form.dart';
 class ContentBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: ListView(
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
@@ -20,7 +19,6 @@ class ContentBox extends StatelessWidget {
             ),
             //color: Colors.blue,
             margin: EdgeInsets.symmetric(vertical: 40),
-            height: 1000,
             width: 512,
             child: FormContainer()
           ),
