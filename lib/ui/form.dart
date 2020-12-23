@@ -11,7 +11,6 @@ class FormContainer extends StatelessWidget {
       children: <Widget>[
         Container(
           child: Row(
-            mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Text(
                 'Nieuw hier?',
@@ -22,7 +21,6 @@ class FormContainer extends StatelessWidget {
         ),
         Container(
           child: Row(
-            mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Text(
                 'Een profiel aanmaken is zo gebeurd',

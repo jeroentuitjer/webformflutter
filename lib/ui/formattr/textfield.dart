@@ -30,8 +30,67 @@ class _FormState extends State<SubscribeForm> {
               ),
             ),
           ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Postcode',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Huisnummer',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Toev.',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'E-mailadres',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Wachtwoord',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Telefoonnummer',
+              ),
+            ),
+          ),
+          Form(
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: '',
+                labelText: 'Geboortedatum',
+              ),
+            ),
+          ),
           RaisedButton(
-            child: Text("Continue"),
+            child: Text('Terug'),
+          ),
+          RaisedButton(
+            child: Text("Meld je aan"),
           )
         ],
       ),
