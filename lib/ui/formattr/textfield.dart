@@ -9,14 +9,13 @@ class _FormState extends State<SubscribeForm> {
   var formKey = GlobalKey<FormState>();
 
   Widget build(BuildContext context) {
-    return Container(
-      width: 400,
-      margin: const EdgeInsets.only(left: 20.0, right: 20.0),
-      child: Column(
+    return Column(
         children: [
           Form(
             key: formKey,
-            child: Column(
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextFormField(
                     decoration: const InputDecoration(
@@ -24,7 +23,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Voornaam',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Voornaam: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -32,7 +31,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Achternaam',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Achternaam: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -40,7 +39,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Postcode',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Postcode: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -48,7 +47,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Huisnummer',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Huisnummer: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -56,7 +55,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Toev.',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Toevoeging: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -64,7 +63,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'E-mailadres',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('E-mailadres: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -72,7 +71,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Wachtwoord',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Wachtwoord: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -80,7 +79,7 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Telefoonnummer',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Telefoonnummer: $value');
                     }),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -88,8 +87,11 @@ class _FormState extends State<SubscribeForm> {
                       labelText: 'Geboortedatum',
                     ),
                     onSaved: (String value) {
-                      print('Value: $value');
+                      print('Geboortedatum: $value');
                     }),
+                Checkbox(
+                    value: true,
+                ),
               ],
             ),
           ),
@@ -103,7 +105,6 @@ class _FormState extends State<SubscribeForm> {
             child: Text("Meld je aan"),
           )
         ],
-      ),
-    );
+      );
   }
 }

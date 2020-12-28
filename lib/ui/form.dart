@@ -5,43 +5,38 @@ import '../library.dart' as lib;
 import 'formattr/radiogender.dart';
 import 'formattr/textfield.dart';
 
-class FormContainer extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Container(
-          child: Row(
-            children: <Widget>[
-              Text(
-                'Nieuw hier?',
-                style: lib.headerText,
-              ),
-            ],
-          ),
-        ),
-        Container(
-          child: Row(
-            children: <Widget>[
-              Text(
-                'Een profiel aanmaken is zo gebeurd',
-                style: lib.basicText,
-              ),
-            ],
-          ),
-        ),
+// class FormContainer extends StatelessWidget {
+//   Widget build(BuildContext context) {
+//     return
+        // Container(
+        //   alignment: Alignment.topLeft,
+        // margin: const EdgeInsets.only(top: 8),
+        //      child: Text(
+        //         'Nieuw hier?',
+        //         style: lib.headerText,
+        //       ),
+        // );
+        // Container(
+        // margin: const EdgeInsets.only(top: 8),
+        //   child: Text(
+        //         'Een profiel aanmaken is zo gebeurd',
+        //         style: lib.basicText,
+        //       ),
+        // );
      //   Container(
           //child: GenderChoice(),
        // ),
-      Container(
-        child: Row(
-          children: <Widget>[
-            Container(
-            child: SubscribeForm(),
-              ),
-          ],
-        ),
-      ),
-            ],
-    );
-  }
-}
+      // Container(
+      //   child: Row(
+      //     children: <Widget>[
+      //       Container(
+      //       child: SubscribeForm(),
+      //         ),
+      //     ],
+      //   ),
+      // ),
+//   }
+// }
+//   // ),
+//   }
+// }

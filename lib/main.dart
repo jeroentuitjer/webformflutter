@@ -32,6 +32,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black12,
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Column(
