@@ -307,6 +307,21 @@ class ContentBox extends StatelessWidget {
                                     ),
                                   ],
                                 ),
+                                Column(
+                                  children: [
+                                    SizedBox(
+                                      width: 200,
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        border: OutlineInputBorder(),
+                                        labelText: 'Enter Name Here',
+                                        hintText: 'Enter Name Here',
+                                      ),
+                                      autofocus: false,
+                                    ),
+                                    ),
+                                  ],
+                                ),
                               ],
                             ),
                           ],
